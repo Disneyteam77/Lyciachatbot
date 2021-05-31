@@ -55,7 +55,7 @@ async def inline_query_handler(client, query):
    
 
 async def lyciachatbot(answers, text):
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={text}&botname=@Lyciachatbot&ownername=@madepranav"
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={text}&botname=@ErzaChat_bot&ownername=@Yeageristbotsdev"
     result = await fetch(URL)
     buttons = InlineKeyboard(row_width=1)
     buttons.add(InlineKeyboardButton(
@@ -67,8 +67,8 @@ async def lyciachatbot(answers, text):
 **Lycia:** `{result['message']}`"""
     answers.append(
         InlineQueryResultPhoto(
-            photo_url="https://telegra.ph/file/4fd47f6ab742a28b5e57c.jpg",
-            title="Lycia",
+            photo_url="https://telegra.ph/file/c0de581cf0f2123f108df.jpg",
+            title="Erza",
             description=result['message'],
             caption=caption,
             reply_markup=buttons
