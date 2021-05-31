@@ -45,8 +45,8 @@ async def inline_query_handler(client, query):
                     switch_pm_parameter='Erza',
                 )
                 return
-            lycia = string.split(None, 1)[1].strip()
-            Lycia = await ErzaChat_bot(answers, lycia)
+            Erza = string.split(None, 1)[1].strip()
+            Erza = await ErzaChat_bot(answers, Erza)
             await client.answer_inline_query(
                 query.id,
                 results=Erza,
