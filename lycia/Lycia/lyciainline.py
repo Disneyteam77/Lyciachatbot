@@ -36,7 +36,7 @@ async def inline_query_handler(client, query):
     string = query.query.lower()
 
     answers = []
-    if string.split()[0] == "Erza":
+    if string.split()[0] == "lycia":
             if len(string.split()) < 2:
                 await client.answer_inline_query(
                     query.id,
