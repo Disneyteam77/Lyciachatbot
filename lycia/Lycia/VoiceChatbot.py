@@ -43,7 +43,7 @@ async def Lycia(_, message):
     except Exception as e:
         await m.edit(str(e))
         return
-    await m.edit("Made By @madepranav...")
+    await m.edit("Made By@Yeageristbotsdev...")
     LyciaVoice = await ai_lycia(VoiceAi)
     await m.edit("Repyping...")
     await message.reply_audio(audio=LyciaVoice, title=chatbot, performer=name)
