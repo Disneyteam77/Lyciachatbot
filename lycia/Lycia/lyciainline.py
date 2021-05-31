@@ -36,13 +36,13 @@ async def inline_query_handler(client, query):
     string = query.query.lower()
 
     answers = []
-    if string.split()[0] == "lycia":
+    if string.split()[0] == "Erza":
             if len(string.split()) < 2:
                 await client.answer_inline_query(
                     query.id,
                     results=answers,
                     switch_pm_text='Erza | Chat [text]',
-                    switch_pm_parameter='lycia',
+                    switch_pm_parameter='Erza',
                 )
                 return
             Erza = string.split(None, 1)[1].strip()
