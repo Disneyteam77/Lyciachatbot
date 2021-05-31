@@ -33,8 +33,8 @@ async def lycia(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         aura = msg
-        aura = aura.replace("lycia", "Aco")
-        aura = aura.replace("Lycia", "Aco")
+        aura = aura.replace("Erza", "Aco")
+        aura = aura.replace("Erza", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -96,8 +96,8 @@ async def lycia(client, message):
         if not "en" in lan and not lan == "":
             aura = translator.translate(aura, lang_tgt="en")
 
-        aura = aura.replace("lycia", "Aco")
-        aura = aura.replace("Lycia", "Aco")
+        aura = aura.replace("Erza", "Aco")
+        aura = aura.replace("Erza", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -169,8 +169,8 @@ async def redaura(client, message):
         aura = translator.translate(aura, lang_tgt="en")
 
    
-    aura = aura.replace("lycia", "Aco")
-    aura = aura.replace("Lycia", "Aco")
+    aura = aura.replace("Erza", "Aco")
+    aura = aura.replace("Erza", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -204,7 +204,7 @@ async def redaura(client, message):
 
 
 @LYCIA.on_message(
-    filters.regex("Lycia|lycia|LYCIA")
+    filters.regex("Erza|Erza|ERZA")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -248,8 +248,8 @@ async def redaura(client, message):
         aura = translator.translate(aura, lang_tgt="en")
 
 
-    aura = aura.replace("lycia", "Aco")
-    aura = aura.replace("Lycia", "Aco")
+    aura = aura.replace("Erza", "Aco")
+    aura = aura.replace("Erza", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
