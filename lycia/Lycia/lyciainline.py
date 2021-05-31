@@ -36,13 +36,13 @@ async def inline_query_handler(client, query):
     string = query.query.lower()
 
     answers = []
-    if string.split()[0] == "Erza":
+    if string.split()[0] == "erza":
             if len(string.split()) < 2:
                 await client.answer_inline_query(
                     query.id,
                     results=answers,
-                    switch_pm_text='Erza | Chat [text]',
-                    switch_pm_parameter='Erza',
+                    switch_pm_text='erza | Chat [text]',
+                    switch_pm_parameter='erza',
                 )
                 return
             Erza = string.split(None, 1)[1].strip()
@@ -59,7 +59,7 @@ async def ErzaChat_bot(answers, text):
     result = await fetch(URL)
     buttons = InlineKeyboard(row_width=1)
     buttons.add(InlineKeyboardButton(
-        "Erza",
+        "erza",
         switch_inline_query_current_chat="Erza"
     ))
     caption = f"""
