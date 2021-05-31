@@ -41,25 +41,25 @@ async def inline_query_handler(client, query):
                 await client.answer_inline_query(
                     query.id,
                     results=answers,
-                    switch_pm_text='Lycia | Chat [text]',
-                    switch_pm_parameter='lycia',
+                    switch_pm_text='Erza | Chat [text]',
+                    switch_pm_parameter='Erza',
                 )
                 return
             lycia = string.split(None, 1)[1].strip()
-            Lycia = await lyciachatbot(answers, lycia)
+            Lycia = await ErzaChat_bot(answers, lycia)
             await client.answer_inline_query(
                 query.id,
-                results=Lycia,
+                results=Erza,
                 cache_time=2
             )
    
 
-async def lyciachatbot(answers, text):
+async def ErzaChat_bot(answers, text):
     URL = f"https://api.affiliateplus.xyz/api/chatbot?message={text}&botname=@ErzaChat_bot&ownername=@Yeageristbotsdev"
     result = await fetch(URL)
     buttons = InlineKeyboard(row_width=1)
     buttons.add(InlineKeyboardButton(
-        "Lycia",
+        "Erza",
         switch_inline_query_current_chat="Erza"
     ))
     caption = f"""
