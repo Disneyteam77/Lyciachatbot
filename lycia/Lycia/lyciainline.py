@@ -42,7 +42,7 @@ async def inline_query_handler(client, query):
                     query.id,
                     results=answers,
                     switch_pm_text='Erza | Chat [text]',
-                    switch_pm_parameter='Erza',
+                    switch_pm_parameter='lycia',
                 )
                 return
             Erza = string.split(None, 1)[1].strip()
